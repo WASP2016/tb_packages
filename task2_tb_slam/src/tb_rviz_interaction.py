@@ -116,10 +116,6 @@ def click_cb(data):
     goals.append([x,y])
     #Clear the map
     clear_map()
-    #Update the markes to display on RViz
-    update_markers(goals, completed_goals)
-    #Update the list of goals that should be published to tb_path_publisher
-    update_pose_list(goals)
 
 def start():
     global goal_pub, poseArray_pub
